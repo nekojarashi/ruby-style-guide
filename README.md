@@ -82,7 +82,7 @@ Translations of the guide are available in the following languages:
 * [Metaprogramming](#metaprogramming)
 * [Misc](#misc)
 
-## Source Code Layout
+## ソースコードレイアウト
 
 > Nearly everybody is convinced that every style but their own is
 > ugly and unreadable. Leave out the "but their own" and they're
