@@ -3,13 +3,12 @@
 > スタイルとは、素晴らしいものから良い部分を取り出したものである。<br />
 > -- Bozhidar Batsov
 
-One thing has always bothered me as Ruby developer - Python developers
-have a great programming style reference
-([PEP-8](http://www.python.org/dev/peps/pep-0008/)) and we never got
-an official guide, documenting Ruby coding style and best
-practices. And I do believe that style matters. I also believe that
-such fine fellows, like us Ruby developers, should be quite capable to
-produce this coveted document.
+Ruby開発者として、あるひとつのことが私をつねに悩ませていた - Python開発者には
+優れたプログラミングスタイルのリファレンス([PEP-8](http://www.python.org/dev/peps/pep-0008/))
+が用意されているのに対し、Rubyにはコーディングスタイルやベストプラクティスが
+記載された公式なガイドがない、という事実だ。私はスタイルこそが重要だと考えており、
+また我々Ruby開発者のような優れた人間は、このようなドキュメントを当然に作れるべきだとも
+思っていた。
 
 This guide started its life as our internal company Ruby coding guidelines
 (written by yours truly). At some point I decided that the work I was
@@ -28,7 +27,7 @@ By the way, if you're into Rails you might want to check out the
 complementary
 [Ruby on Rails 3 Style Guide](https://github.com/bbatsov/rails-style-guide).
 
-# The Ruby Style Guide
+# Rubyスタイルガイド
 
 This Ruby style guide recommends best practices so that real-world Ruby
 programmers can write code that can be maintained by other real-world Ruby
@@ -66,7 +65,7 @@ Translations of the guide are available in the following languages:
 * [Chinese Traditional](https://github.com/JuanitoFatas/ruby-style-guide/blob/master/README-zhTW.md)
 * [French](https://github.com/porecreat/ruby-style-guide/blob/master/README-frFR.md)
 
-## Table of Contents
+## 目次
 
 * [Source Code Layout](#source-code-layout)
 * [Syntax](#syntax)
@@ -105,18 +104,14 @@ Translations of the guide are available in the following languages:
 
 * Unixスタイルの改行コードを使う（*BSD/Solaris/Linux/OSXユーザは標準で対応できるが、
   Windowsユーザは特に注意が必要である）。
-* Use Unix-style line endings. (*BSD/Solaris/Linux/OSX users are covered by default,
-  Windows users have to be extra careful.)
-    * If you're using Git you might want to add the following
-    configuration setting to protect your project from Windows line
-    endings creeping in:
+    * もしGitを使っているなら、Windwosの改行コードの混入を防ぐため、下記の設定を追加
+    するのが良いだろう。
 
         $ git config --global core.autocrlf true
 
-* Use spaces around operators, after commas, colons and semicolons, around `{`
-  and before `}`. Whitespace might be (mostly) irrelevant to the Ruby
-  interpreter, but its proper use is the key to writing easily
-  readable code.
+* 演算子の前後、カンマ、コロンおよびセミコロンの後、`{`の前後と`}`の前には空白を入れる。
+  空白は、ほとんどの場合Rubyインタプリタにとって意味を持たないが、空白の適切な使用は
+  読みやすいコードを書く上での鍵となるだろう。
 
     ```Ruby
     sum = 1 + 2
@@ -125,7 +120,7 @@ Translations of the guide are available in the following languages:
     [1, 2, 3].each { |e| puts e }
     ```
 
-    The only exception is when using the exponent operator:
+    唯一の例外は、べき乗演算子を使う場合である
 
     ```Ruby
     # bad
@@ -135,7 +130,7 @@ Translations of the guide are available in the following languages:
     e = M * c**2
     ```
 
-* No spaces after `(`, `[` or before `]`, `)`.
+* `(`, `[`の後、`]`, `)`の前には空白を置かない。
 
     ```Ruby
     some(arg).other
