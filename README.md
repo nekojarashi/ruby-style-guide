@@ -1,6 +1,6 @@
 # 序章
 
-> Style is what separates the good from the great. <br/>
+> スタイルとは、素晴らしいものから良い部分を取り出したものである。<br />
 > -- Bozhidar Batsov
 
 One thing has always bothered me as Ruby developer - Python developers
@@ -88,21 +88,23 @@ Translations of the guide are available in the following languages:
 > 「自分以外」の部分を取り去れば、この考えは正しい…<br />
 > -- Jerry Coffin (on indentation)
 
-* Use `UTF-8` as the source file encoding.
-* Use two **spaces** per indentation level. No hard tabs.
+* ソースファイルのエンコーディングには`UTF-8`を使う。
+* インデント1つにつき、2つの**空白**を使う。ハードタブは使わない。
 
     ```Ruby
-    # good
+    # 良い
     def some_method
       do_something
     end
 
-    # bad - four spaces
+    # 悪い - スペースが4つ
     def some_method
         do_something
     end
     ```
 
+* Unixスタイルの改行コードを使う（*BSD/Solaris/Linux/OSXユーザは標準で対応できるが、
+  Windowsユーザは特に注意が必要である）。
 * Use Unix-style line endings. (*BSD/Solaris/Linux/OSX users are covered by default,
   Windows users have to be extra careful.)
     * If you're using Git you might want to add the following
