@@ -1,4 +1,4 @@
-# Prelude
+# 序章
 
 > Style is what separates the good from the great. <br/>
 > -- Bozhidar Batsov
@@ -84,9 +84,8 @@ Translations of the guide are available in the following languages:
 
 ## ソースコードレイアウト
 
-> Nearly everybody is convinced that every style but their own is
-> ugly and unreadable. Leave out the "but their own" and they're
-> probably right... <br/>
+> ほぼ全ての人は、自分以外のコーディングスタイルは醜く解読不能と思っている。
+> 「自分以外」の部分を取り去れば、この考えは正しい…<br />
 > -- Jerry Coffin (on indentation)
 
 * Use `UTF-8` as the source file encoding.
